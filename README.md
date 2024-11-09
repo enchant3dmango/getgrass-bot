@@ -23,7 +23,7 @@ https://grassfoundation.io/eligibility
 - Ctrl + A, then D to detach the screen, it will run in the background.
 
 ## Referral
-https://app.getgrass.io/register/?referralCode=0PhrIR8TAQX6IG4
+https://app.getgrass.io/register/?referralCode=SxjVUVv2xt1LNCp
 
 ## How to get user_id?
 1. Open the link to log in https://app.getgrass.io/dashboard.
