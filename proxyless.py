@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-# @Time     :2023/12/26 18:08
-# @Author   :ym
-# @File     :no_proxy.py
-# @Software :PyCharm
 import asyncio
+import json
 import random
 import ssl
-import json
 import time
 import uuid
 
@@ -28,12 +23,23 @@ async def connect_to_wss(user_id):
             ssl_context.verify_mode = ssl.CERT_NONE
             uri = "wss://proxy.wynd.network:4650/"
             server_hostname = "proxy.wynd.network"
-            async with websockets.connect(uri, ssl=ssl_context, extra_headers=custom_headers,
-                                          server_hostname=server_hostname) as websocket:
+            async with websockets.connect(
+                uri,
+                ssl=ssl_context,
+                extra_headers=custom_headers,
+                server_hostname=server_hostname,
+            ) as websocket:
+
                 async def send_ping():
                     while True:
                         send_message = json.dumps(
-                            {"id": str(uuid.uuid4()), "version": "1.0.0", "action": "PING", "data": {}})
+                            {
+                                "id": str(uuid.uuid4()),
+                                "version": "1.0.0",
+                                "action": "PING",
+                                "data": {},
+                            }
+                        )
                         logger.debug(send_message)
                         await websocket.send(send_message)
                         await asyncio.sleep(20)
@@ -52,11 +58,11 @@ async def connect_to_wss(user_id):
                             "result": {
                                 "browser_id": device_id,
                                 "user_id": user_id,
-                                "user_agent": custom_headers['User-Agent'],
+                                "user_agent": custom_headers["User-Agent"],
                                 "timestamp": int(time.time()),
                                 "device_type": "extension",
-                                "version": "2.5.0"
-                            }
+                                "version": "2.5.0",
+                            },
                         }
                         logger.debug(auth_response)
                         await websocket.send(json.dumps(auth_response))
@@ -70,11 +76,11 @@ async def connect_to_wss(user_id):
 
 
 async def main():
-    # TODO 修改user_id
-    _user_id = ''
+    with open("user_id.txt", "r") as f:
+        _user_id = f.readline().rstrip("\n")
+
     await connect_to_wss(_user_id)
 
 
-if __name__ == '__main__':
-    # # 运行主函数
+if __name__ == "__main__":
     asyncio.run(main())

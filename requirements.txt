@@ -1,0 +1,3 @@
+aiohttp==3.10.10
+loguru==0.7.2
+websockets_proxy==0.1.1

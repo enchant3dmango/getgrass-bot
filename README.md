@@ -1,53 +1,32 @@
-# getgrass_bot
+# :seedling: GetGrass Bot
 
-### 资格查询地址
-
+## Eligibility Checker
 https://grassfoundation.io/eligibility
 
-### 空投领取脚本
-
+## Grass Claimer
 [MsLolita/Grass-Claimer](https://github.com/MsLolita/Grass-Claimer)
 
-# 打赏
+## How to run?
+- Run `apt install python3-pip`.
+- Go to `GetGrass-Bot` dir.
+- Run `pip3 install -r requirements.txt`.
+- Create `id.txt` file and put your user ID there.
+- Create `proxy.txt` file and put your proxy in newline text there. Example:
+    ```txt
+    http://auth-1@host:port
+    http://auth-2@host:port
+    http://auth-3@host:port
+    http://auth-n@host:port
+- Run `screen -S grass`. Choose one of the below steps depending on your condition:
+    - Run `python3 main.py`.
+    - Run `proxyless.py` if not using any proxy.
+- Ctrl + A, then D to detach the screen, it will run in the background.
 
-ERC20 : 0xe47aA47319Eb2b4a31370620FEf0E72C6E717f8A
-
-Solana : GAkpA5ynWFfQqMUhEsfS3CrNT92Ah31kS6b1tcgiyq4U
-
-# 
-
-`pip3 install websockets_proxy`
-
-
-`pip3 install loguru`
-
-
-修改main函数中user_id和sock5代理列表
-
-如果不使用代理,请运行no_proxy.py
-
-
-### 邀请链接
-
+## Referral
 https://app.getgrass.io/register/?referralCode=0PhrIR8TAQX6IG4
 
-### user_id获取方法
+## How to get user_id?
+1. Open the link to log in https://app.getgrass.io/dashboard.
+2. Press F12 on the page to open the console and enter the code `localStorage.getItem('userId')` or click application, check Local Storage, and copy the userId value.
 
-1.打开链接登录https://app.getgrass.io/dashboard
-
-2.页面按F12打开控制台 输入代码
-
-`localStorage.getItem('userId')`
-
-打印的就是当前用户的user_id
-
-
-![0001](https://github.com/ymmmmmmmm/getgrass_bot/assets/51306299/31d0e16e-df2f-443a-a141-910d16052ed9)
-
-
-无代码基础请直接使用带界面版本
-
-
-![3333](https://github.com/ymmmmmmmm/getgrass_bot/assets/51306299/80e18c1f-da5d-40d4-a361-3506b44c6602)
-
-
+LFG! :rocket:
