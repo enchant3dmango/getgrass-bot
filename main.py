@@ -86,7 +86,7 @@ async def connect_to_wss(socks5_proxy, user_id):
 
 
 async def main():
-    with open("user_id.txt", "r") as f:
+    with open("id.txt", "r") as f:
         _user_id = f.readline().rstrip("\n")
 
     with open("proxy.txt", "r") as f:

@@ -76,7 +76,7 @@ async def connect_to_wss(user_id):
 
 
 async def main():
-    with open("user_id.txt", "r") as f:
+    with open("id.txt", "r") as f:
         _user_id = f.readline().rstrip("\n")
 
     await connect_to_wss(_user_id)
