@@ -1,12 +1,10 @@
 # :seedling: GetGrass Bot
 
-## Eligibility Checker
-https://grassfoundation.io/eligibility
+## Eligibility Checker & Claimer
+- [Eligibility Checker](https://grassfoundation.io/eligibility)
+- [Claimer](https://github.com/MsLolita/Grass-Claimer)
 
-## Grass Claimer
-[MsLolita/Grass-Claimer](https://github.com/MsLolita/Grass-Claimer)
-
-## How to run?
+## How to Run?
 - Run `apt install python3-pip`.
 - Go to `GetGrass-Bot` dir.
 - Run `pip3 install -r requirements.txt`.
@@ -25,7 +23,7 @@ https://grassfoundation.io/eligibility
 ## Referral
 https://app.getgrass.io/register/?referralCode=SxjVUVv2xt1LNCp
 
-## How to get user_id?
+## How to Get the user_id?
 1. Open the link to log in https://app.getgrass.io/dashboard.
 2. Press F12 on the page to open the console and enter the code `localStorage.getItem('userId')` or click application, check Local Storage, and copy the userId value.
 
