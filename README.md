@@ -20,7 +20,7 @@
     - Run `proxyless.py` if not using any proxy.
 - Ctrl + A, then D to detach the screen, it will run in the background.
 
-## Warnings
+## Warnings!
 - :warning: Just update the `proxy.txt` when you wanna add or change the proxy list, no need to restart the service!
 - :warning: Don't touch the `id.txt` when the service is running!
 
