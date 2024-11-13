@@ -163,5 +163,4 @@ cython_debug/
 
 # Local files
 .DS_Store
-id.txt
-proxy.txt
+*.txt
