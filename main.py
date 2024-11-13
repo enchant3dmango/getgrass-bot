@@ -197,11 +197,11 @@ async def main():
         for proxy in proxy_manager.proxy_list:
             task = asyncio.create_task(connect_to_wss(proxy, user_id))
             proxy_manager.tasks[proxy] = task
-        
+
         # Keep the main task running
         while True:
             await asyncio.sleep(1)
-            
+
     except asyncio.CancelledError:
         logger.info("Main task cancelled.")
     except Exception as e:
