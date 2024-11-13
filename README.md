@@ -4,10 +4,16 @@
 - [Eligibility Checker](https://grassfoundation.io/eligibility)
 - [Claimer](https://github.com/MsLolita/Grass-Claimer)
 
+## Warnings!
+- :warning: Only tested on **Ubuntu 24.04 LTS**.
+- :warning: Just update the `proxy.txt` when you wanna add or change the proxy list, no need to restart the service!
+- :warning: Don't touch the `id.txt` when the service is running!
+
 ## How to Run?
-- Run `apt install python3-pip`.
+- Run `apt install python3-pip python3-venv`.
 - Go to `GetGrass-Bot` dir.
-- Run `pip3 install -r requirements.txt`.
+- Run `python3 -m venv venv`.
+- Run `pip install -r requirements.txt`.
 - Create `id.txt` file and put your user ID there.
 - Create `proxy.txt` file and put your proxy in newline text there. Example:
     ```txt
@@ -19,10 +25,6 @@
     - Run `python3 main.py`.
     - Run `proxyless.py` if not using any proxy.
 - Ctrl + A, then D to detach the screen, it will run in the background.
-
-## Warnings!
-- :warning: Just update the `proxy.txt` when you wanna add or change the proxy list, no need to restart the service!
-- :warning: Don't touch the `id.txt` when the service is running!
 
 ## Referral
 https://app.getgrass.io/register/?referralCode=SxjVUVv2xt1LNCp
