@@ -11,8 +11,9 @@
 
 ## How to Run?
 - Run `apt install python3-pip python3-venv`.
-- Go to `GetGrass-Bot` dir.
-- Run `python3 -m venv venv`.
+- Go to `GetGrass-Bot` or your custom dir for the bot.
+- Run `python3 -m venv venv` to create virtual environment.
+- Run `source venv/bin/activate` to activate the virtual environment.
 - Run `pip install -r requirements.txt`.
 - Create `id.txt` file and put your user ID there.
 - Create `proxy.txt` file and put your proxy in newline text there. Example:
