@@ -1,5 +1,8 @@
 # :seedling: GetGrass Bot
 
+## Proxy Provider
+I bought mine from https://proxyscrape.com/.
+
 ## Eligibility Checker & Claimer
 - [Eligibility Checker](https://grassfoundation.io/eligibility)
 - [Claimer](https://github.com/MsLolita/Grass-Claimer)
@@ -23,7 +26,7 @@
     http://auth-3@host:port
     http://auth-n@host:port
 - Run `screen -S grass`. Choose one of the below steps depending on your condition:
-    - Run `python3 main.py`.
+    - Run `python main.py`.
     - Run `proxyless.py` if not using any proxy.
 - Ctrl + A, then D to detach the screen, it will run in the background.
 
