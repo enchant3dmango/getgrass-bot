@@ -14,11 +14,12 @@ I bought mine from https://proxyscrape.com/.
 
 ## How to Run?
 - Run `apt install python3-pip python3-venv`.
-- Go to `GetGrass-Bot` or your custom dir for the bot.
+- Run `git clone https://github.com/enchant3dmango/getgrass-bot.git` to clone the repository.
+- Run `cd getgrass-bot` to move to the cloned repository dir.
 - Run `python3 -m venv venv` to create virtual environment.
 - Run `source venv/bin/activate` to activate the virtual environment.
-- Run `pip install -r requirements.txt`.
-- Create `id.txt` file and put your user ID there.
+- Run `pip install -r requirements.txt` to install the dependencies.
+- Create `id.txt` file and put your user ID there. Check [this](https://github.com/enchant3dmango/getgrass-bot?tab=readme-ov-file#how-to-get-the-user_id) to get `user_id`.
 - Create `proxy.txt` file and put your proxy in newline text there. Example:
     ```txt
     http://auth-1@host:port
@@ -29,6 +30,7 @@ I bought mine from https://proxyscrape.com/.
     - Run `python main.py`.
     - Run `proxyless.py` if not using any proxy.
 - Ctrl + A, then D to detach the screen, it will run in the background.
+- Check your Grass dashboard.
 
 ## Referral
 https://app.getgrass.io/register/?referralCode=SxjVUVv2xt1LNCp
